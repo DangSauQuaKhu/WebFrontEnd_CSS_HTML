@@ -1,0 +1,415 @@
+/* font-family: 'Lato', sans-serif; */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /*mawcj dinh la 16px*/
+}
+body{
+    overflow-x: hidden;
+}
+/*---headerr--*/
+.logo{
+    width: 350px;
+     float: left; 
+     margin-left: 70px;
+     margin-top: -50px;
+}
+header{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.8) 55%, rgba(45,95,93,0.85)),url("../img/background4.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.pathlink{
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 55px;
+    
+}
+.pathlink li a{
+    text-decoration: none;
+    font-size: 110%;
+    color: white;
+    font-weight: 700;
+    transition: border-bottom 0.1s;
+    padding: 2px 0;
+}
+.pathlink li{
+    display: inline-block;
+    margin-right: 30px;
+    
+    
+}
+.pathlink li a:hover, .pathlink li a :active{
+   border-bottom: 2px solid #cccc;
+  
+}
+.clearfix::after{
+    content:" ";
+    display: table;
+    clear:both;
+}
+.heading-main{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-55%);
+    width: 1140px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: white;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    width: 190px;
+    margin: 0 5px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s ;
+    
+
+}
+.btn:hover, .btn:active{
+    background-color: #d35400;
+    font-weight: 300;
+   
+ }
+ h2{
+     padding-top: 50px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     color: #e67e22;
+     font-size: 180%;
+     font-weight: 700;
+     text-align: center;
+     /* width: 200px;
+     margin: 0 auto; */
+     
+ }
+ h2::after{
+     content: " ";
+     display: block;
+     width: 150px;
+     height: 2px;
+     background-color: rgba(230,126,34,0.5);
+     margin: 0 auto;
+    margin-top: 5px;
+     
+
+ } 
+ 
+ .p-intro{
+     text-align: center;
+     color: #265077;
+     font-size: 22px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+     width: 70%;
+     margin-left: 15%;
+     line-height: 140%;
+ }
+.about-section{
+    padding: 50px;
+}
+.about-picture{
+    position: relative;
+    margin-top: 50px;
+}
+.about-picture img{
+    
+    width: 90%;
+    border-radius: 20px;
+    border: 4px solid #b4d2ee;
+    box-shadow: 0px 5px 15px 5px #265077 ;
+    transition: all.7s;
+}
+    /* filter: blur(2px) brightness(60%); */
+    /*x-y do mo, do phong rong -mau*/
+
+.picture-title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #b4d2ee;
+    transform:translate(-60%,100%);
+    opacity: 0;
+    transition: all.7s;
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title{
+    transform:translate(-60%,50%);
+    opacity: 1;
+}
+.about-picture:hover img,
+.about-picture:active img{
+    filter: blur(2px) brightness(60%);
+    
+}
+ul{
+    list-style: none;
+}
+/*---product section---*/
+.products-section{
+    margin-top: 50px;
+    background-color: #f4f4f4; 
+    height: 600px;
+}
+.products-section h2{
+    margin-bottom: 60px;
+}
+.product-box{
+    background-color:#eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    width: 90%;
+    height: 350px;
+    position: relative;
+    
+}
+h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; 
+   
+    
+
+}
+.product-price{
+    color: #265077;
+    font-size: 250%;
+    font-weight: 300;
+    text-align: center;
+    
+}
+.product-price span{
+    font-size: 90%;
+    font-weight: 200;
+}
+.product-box ul li{
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.small-icon{
+    color: #3d5569;
+    font-size: 130%;
+    margin-right: 10px;
+}
+.btn1{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    width: 190px;
+    margin: 0 5px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s ;
+    margin-left: 20%;
+}
+/*Testimonial section*/
+.testimonials-section{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.8) 55%, rgba(45,95,93,0.85)),url("../img/background2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 550px;
+}
+.testimonials-section h2{
+    margin-bottom: 70px;
+}
+blockquote{
+    position: relative;
+    width: 95%;
+    font-style: italic;
+    line-height: 140%;
+    color: white;
+}
+blockquote::before{
+    content: '\201C';
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+cite{
+    display: block;
+    color: #6b95bd;
+    margin-top: 25px;
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #265077;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    
+}
+/* --- sppnsor---*/
+.sponsors-section{
+    height: 700px;
+
+}
+.sponsors-showcase{
+    margin-left: 7%;
+} 
+.sponsors-showcase li figure img{
+    width: 140px;
+    cursor: pointer;
+    transition: all.3s;
+  
+}
+.sponsors-showcase li figure figcaption{
+    color: #265077;
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+    
+}
+
+.sponsors-showcase li{
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+
+}
+.sponsors-showcase li img:hover,
+.sponsors-showcase li img:hover{
+    transform: scale(1.2);
+}
+/*--footer--*/
+footer{
+    text-align: center;
+    background-color: rgb(41, 39, 39);
+    color: white;
+    padding: 20px;
+}
+/*--contact--*/
+.contact-section{
+    padding-top: 50px;
+    height: 550px;
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.8) 55%, rgba(45,95,93,0.85)),url("../img/background5.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.information{
+    list-style: none;
+    color: white;
+    line-height: 200%;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 80%;
+    left: -20%;
+    
+}
+.more-icon{
+    color: #7e1ed8;
+    margin-right: 10px;
+    font-size: 120%;
+    
+}
+.social-icons 
+{
+    margin-top: 50px;
+    list-style: none;
+    
+}
+.social-icons li{
+    display: inline-block;
+    font-size: 250%;
+    margin-left: 20px;
+    color: white;
+}
+.social-icons li i{
+    transition: all.3s;
+    cursor: pointer;
+}
+.social-icons li i:hover,
+.social-icons li i:active{
+    transform: scale(1.3);
+    color: orange;
+}
+form{
+    background-color: rgba(0,0,0, 0.4);
+    margin-left: 40%;
+    width: 65%;
+    height: 400px;
+    padding: 30px;
+    
+}
+label{
+    font-size: 100% ;
+    color: white;
+}
+input,textarea{
+    outline: none;
+    padding: 10px;
+    background-color: rgba(126, 119, 119, 0.3);
+    border: 1px solid rgba(75, 73, 73, 0.8);
+    margin-left: 30px;
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+input{
+    height: 50px;
+
+}
+form .row:last-child{
+    text-align: center;
+}
+input[type=text],input[type=email],textarea{
+    width: 80%;
+    font-size: 100%;
+}
+input[type=submit]
+{
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 50%;
+    margin: 20px;
+}
+input[type=text]:focus,input[type=email]:focus,textarea:focus{
+    color: white;
+    background-color:  rgba(126, 119, 119, 0.5);;
+}
